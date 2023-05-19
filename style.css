@@ -89,3 +89,30 @@ body{
     margin-top: -6px;
 
 }
+@media (max-width: 450px) { 
+    .card{
+        margin-top: 20px;
+    }
+    .search{
+        width: 100%;
+        display:grid;
+        align-items: right;
+        justify-content:center;
+    }
+    .search input{
+        
+        margin-right: 0px;
+    }
+    .search button{
+        margin-top: 10px;
+        margin-left: 60vw;
+    }
+    .details{
+        margin-left: 15vw;
+        display: grid;
+        margin-top: 25px;
+    }
+    .col{
+        margin-top: 15px;
+    }
+}
