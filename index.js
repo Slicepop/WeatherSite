@@ -32,8 +32,17 @@ async function checkWeather(city){
         case ("Snow"):
             weatherIcon.src = "images/images/snow.png";
             break;
+        case ("Haze" || "Smoke" || "Dust" || "Fog"):
+            weatherIcon.src = "images/images/haze.png";
+            break;
+        case ("Sand" || "Dust"):
+            weatherIcon.src = "images/images/sand.png";
+            break;
+        case ("Ash"):
+            weatherIcon.src = "images/images/volcanoe.png";
+            break;
         default:
-            weatherIcon.src = "none";
+            weatherIcon.src = none;
 
     }
 
