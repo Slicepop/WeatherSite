@@ -12,7 +12,12 @@ async function checkWeather(city){
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°F";
     document.querySelector(".humidity").innerHTML = Math.round(data.main.humidity) + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + " MPH";
-    console.log(data);
+    document.querySelector(".wind").innerHTML = data.wind.speed + " MPH";
+    document.querySelector("#highTemp").innerHTML = Math.round(data.main.temp_max) + "°F";
+    document.querySelector("#lowTemp").innerHTML = Math.round(data.main.temp_min) + "°F";
+    document.querySelector(".feelslike").innerHTML = "Feels Like " + Math.round(data.main.feels_like) + "°F";
+    
+
     switch(data.weather[0].main){
         case ("Clouds"):
             weatherIcon.src = "images/images/clouds.png";
@@ -49,4 +54,7 @@ async function checkWeather(city){
 }
 searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
+    document.getElementById("arrowB").style.opacity = "1";
+    document.getElementById("arrowR").style.opacity = "1";
+
 })

@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/99edd4be2a.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <div class="card">
@@ -14,8 +16,22 @@
         </div>
         <div class="weather">
             <img src="images/images/rain.png" alt="rain" class="weatherIcon">
-            <h1 class="temp">Enter</h1>
+            <div class="temps">
+                <h1 class="temp">Enter</h1>
+                <div class="highLow">
+                    <div class="high">
+                        <i class="fa-solid fa-arrow-up" id="arrowR" style="color: red;opacity: 0;"></i>
+                        <h3 class="highlowtemp" id="highTemp"></h3>
+
+                    </div>
+                    <div class="low">
+                        <i class="fa-solid fa-arrow-down" id="arrowB"  style="color: blue;opacity: 0;" ></i>
+                        <h3 class="highlowtemp" id="lowTemp"></h3>
+                    </div>
+                </div>
+            </div>
             <h2 class="city">City Name</h2>
+            <h3 class="feelslike"></h3>
             <div class="details">
                 <div class="col">
                     <img src="images/images/humidity.png" alt="">
